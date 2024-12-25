@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Over</title>
+    <link rel="shortcut icon" href="./img/logo-sm.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <section class="games pb-4">
+      <div class="upper-img"></div>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-4">
+        <div class="container">
+          <div class="logo">
+            <img src="./img/logo-sm.png" alt="" class="div-img me-1" />
+            <a class="navbar-brand text-white" href="./index.html"
+              >Game Reviews</a
+            >
+          </div>
+          <button
+            class="navbar-toggler m-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase menu">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  data-category="mmorpg"
+                  >mmorpg</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" data-category="shooter"
+                  >shooter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" data-category="sailing"
+                  >sailing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  data-category="permadeath"
+                  >permadeath</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  data-category="superhero"
+                  >superhero</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" data-category="pixel"
+                  >pixel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="cards" class="container">
+        <div class="row g-4" id="gameData"></div>
+      </div>
+    </section>
+
+    <section class="details d-none">
+      <div class="inner container overflow-auto">
+        <div
+          class="name-game d-flex justify-content-between align-items-center mt-2 text-white"
+        >
+          <span class="detail">Details Game</span>
+          <span class="btnClose"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+        <div class="row my-4" id="gameDetails"></div>
+      </div>
+    </section>
+
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+    <script src="./javascript/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./javascript/index.js"></script>
+  </body>
+</html>
